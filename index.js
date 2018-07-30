@@ -83,7 +83,7 @@ octokit.authenticate(config.github.authentication);
 
   // Update events file.
   if (program.update) {
-    updater(octokit, config.github, config.github.files.events, events);
+    updater(octokit, config.github, config.github.file, events);
   }
 
   // Tweet events.
