@@ -28,3 +28,5 @@ RUN npm ci
 # the source code to the container lets us deploy the application without
 # checking out the source code, saving space and time.
 COPY . .
+
+ENTRYPOINT ["node", "index.js"]
